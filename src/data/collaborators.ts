@@ -1,0 +1,45 @@
+export interface Collaborator {
+  id: string;
+  name: string;
+  url: string;
+  logo?: string;
+}
+
+export const collaborators: Collaborator[] = [
+  {
+    "id": "uni-science",
+    "name": "Autonomous Empirical Research Group",
+    "url": "http://www.empiricalresearch.ai",
+    "logo": "https://autoresearch.github.io/autora/img/logo.png"
+  },
+  {
+    "id": "research-lab",
+    "name": "Virtual Institute for Scientific Software",
+    "url": "https://www.schmidtsciences.org/viss/",
+    "logo": "https://d3hnfqimznafg0.cloudfront.net/images/suppliers/ImageForSupplier_2329_17175014752378677.png"
+  },
+  {
+    "id": "tech-institute",
+    "name": "Neuroscience of Cognitive Control Laboratory (Princeton)",
+    "url": "https://ncclab.princeton.edu/",
+    "logo": "data:image/png;base64,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"
+  },
+  {
+    "id": "collab-1741542842919",
+    "name": "Learning Memory & Decision Lab (Brown)",
+    "url": "https://sites.brown.edu/mattlab/",
+    "logo": "https://seeklogo.com/images/B/brown-university-logo-320F576173-seeklogo.com.png"
+  },
+  {
+    "id": "collab-1744663653601",
+    "name": "NeuroLab (Google DeepMind)",
+    "url": "https://deepmind.google/",
+    "logo": "https://files.startupranking.com/startup/thumb/222775_a9ad748931e337dc99b904475237be61e5f352ec_google-deepmind_m.png"
+  },
+  {
+    "id": "collab-1744663780553",
+    "name": "German Research Center for Artificial Intelligence (DFKI)",
+    "url": "https://www.dfki.de/web/ueber-uns/standorte-kontakt/osnabrueck-oldenburg",
+    "logo": "https://www.designtagebuch.de/wp-content/uploads/mediathek//2023/11/dfki-logo.jpg"
+  }
+];
